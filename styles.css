@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+   background-color: rgb(30,30,30); 
+   overflow: hidden;
+   overflow-y: scroll;
+   text-decoration: none;
+   color: white;
+}
+
+.navbar{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    object-fit: contain;
+    height: 3rem;
+    width: 4rem;
+}
+
+.menuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+
+.menuListItem:hover{
+    padding-bottom: 0.5rem;
+    color: yellow;
+    border-bottom: 1px solid yellow;
+    
+}
+
+.menuBtn{
+    border: none;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.menuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.intro{
+    position:relative;
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.profileImage{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+.leftIntro{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.Hello{
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.Sammy{
+    color: yellow;
+}
+
+.introPara{
+    font-weight: 200;
+    font-size: medium;
+}
+
+.hireMeBtn{
+    background-color: white;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    padding: .75rem 2rem;
+    color: #3498db;
+}
+
+.hireMeImg{
+    height: 1rem;
+    margin-right: 0.25rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 840px){
+    .profileImage {
+        right: 0; /* Adjusted to keep the image on the right */
+    }
+    .job {
+        font-size: 10vw; 
+    }
+    .Hello {
+        font-size: 4.5vw; 
+    }
+}
+
+@media screen and (max-width: 533px){
+    .profileImage {
+        right: 0; /* Adjusted to keep the image on the right */
+    }
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.whatIDo{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.description{
+    font-size: 1rem;
+    max-width: 50rem;
+}
+
+.skillBars{
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem 1.2rem;
+    width: 100vw;
+    max-width: 80%;
+}
+
+.skillBar{
+    display: flex;
+    background: rgb(50,50,50);
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.3rem;;
+}
+
+.skillBarImg{
+    object-fit: cover;
+    height: 2.7rem;
+    margin-right: 1.3rem;
+}
+
+.projects{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.2rem auto;
+    text-align: center;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    padding: 0 1rem;
+  }
+  
+  .myPortfolio{
+      margin: 1rem 0;
+      font-size: 2rem;
+      font-weight: 600;
+  }
+  
+  
+  .portfolioDescription{
+      font-size: 1rem;
+      max-width: 50rem;
+      margin: 1rem 0;
+  }
+  
+  .imagesPortfolio{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      max-width: 65rem;
+      flex-wrap: wrap;
+      
+  }
+  
+  .portfolioImg{
+      object-fit: cover;
+      height: 20rem;
+      margin: 0.5rem;
+  }
+  
+  .seeMore{
+      padding: 0.5rem 2rem;
+      background-color: white;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      margin: 3rem 0;
+  }
+  
+  @media screen and(max-width:585px) {
+      .portfolioImg{
+          height: 48vw;
+      } 
+  }
+
+  .contactPage{
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.descriptionPara{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.clientImgs{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clientImg{
+    object-fit: cover;
+    margin: auto;
+    width: 20%;
+    min-width: 9rem;
+    padding: 0.25rem;
+
+}
+
+.contactPageTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactPageDesc{
+    font-size: 1rem;
+       
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.formName, .formEmail, .formMsg{
+    font-size: medium;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: rgb(40,40,40);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.formSubmit{
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    margin: 2rem;
+} 
+
+.link{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linksImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+    cursor: pointer;
+}
+
+footer{
+    width: 100vw;
+    height: 4rem;
+    background-color: rgb(40,40,40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: medium;
+}
