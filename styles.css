@@ -4,7 +4,8 @@
     box-sizing: border-box;
     background: transparent;
     font-family: 'Poppins', sans-serif;
-    
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body{
@@ -145,6 +146,12 @@ a {
     border-radius: 2rem;
     padding: .75rem 2rem;
     color: #3498db;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer;
+    text-align: center;
 }
 
 .hireMeImg{
