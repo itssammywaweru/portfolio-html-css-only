@@ -14,7 +14,6 @@ body{
    text-decoration: none;
    color: white;
 }
-
 .navbar{
     background: rgb(30,30,30);
     height: 5rem;
@@ -111,15 +110,17 @@ body{
 .introPara{
     font-weight: 200;
     font-size: medium;
+    color: yellow;
 }
 
-.hireMeBtn{
+.hireMeBtn, .downloadCvBtn{
     background-color: white;
     margin: 1rem 0;
     border: none;
     border-radius: 2rem;
     padding: .75rem 2rem;
     color: #3498db;
+    text-decoration: none;
 }
 
 .hireMeImg{
